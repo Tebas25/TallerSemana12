@@ -32,6 +32,6 @@ float calcularVolumen(float puntos[4][3],float base){
     float x1=(puntos[0][0]+puntos[1][0]+puntos[2][0])/3;
     float y1=(puntos[0][1]+puntos[1][1]+puntos[2][1])/3;
     float z1=(puntos[0][2]+puntos[1][2]+puntos[2][2])/3;
-    float distancia=sqrt(pow(puntos[3][0]+x1,2)+pow(puntos[3][1]+y1,2)+pow(puntos[3][2]+z1,2));
+    float distancia=sqrt(pow(puntos[3][0]-x1,2)+pow(puntos[3][1]-y1,2)+pow(puntos[3][2]-z1,2));
     return base*distancia/3;
 }
